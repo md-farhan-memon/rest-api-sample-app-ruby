@@ -27,7 +27,7 @@ class User < ActiveRecord::Base
   end
 
   def create_credit_card
-    credit_card.payer_id = self.email
+    credit_card.external_customer_id = self.email
     if credit_card.create
       self.credit_card_id          = credit_card.id
       self.credit_card_description = credit_card.description

@@ -10,10 +10,11 @@ gem 'twitter-bootstrap-rails'
 gem 'simple_form'
 gem 'haml-rails'
 gem 'devise'
+gem 'json', '~> 1.8.2'
 
 # PayPal
-gem 'paypal-sdk-core', '~> 0.3.0',	:git => 'https://github.com/paypal/sdk-core-ruby.git'
-gem 'paypal-sdk-rest', '~> 0.7.0',	:git => 'https://github.com/paypal/rest-api-sdk-ruby.git'
+gem 'paypal-sdk-core', '~> 0.3.2'
+gem 'paypal-sdk-rest', '~> 1.3.3'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
